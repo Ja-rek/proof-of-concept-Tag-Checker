@@ -2,9 +2,11 @@
 
 <button type="button" id="reset-tags" class="btn btn-primary btn-lg">Reset Tags</button>
 
-<div class="p-3 mb-2 bg-warning text-white" id="loading-tags" style="display:none;">Downloading tags. WAIT...</div>
+<div class="p-3 mb-2 bg-primary text-white" id="loading-tags" style="display:none;">Downloading tags. WAIT...</div>
 
-<div class="p-3 mb-2 bg-danger text-white" id="loading-tags-warning" style="display:none;">Too many requests per sec. Wait about mitue.</div>
+<div class="p-3 mb-2 bg-warning text-dark" id="loading-tags-warning" style="display:none;">Too many requests per sec. Wait about mitue.</div>
+
+<div class="p-3 mb-2 bg-danger text-white" id="loading-tags-danger" style="display:none;">Something wrong with connection...</div>
 
 <table class="table">
   <thead>
@@ -20,7 +22,7 @@
       <tr>
         <td>@tag.Name</td>
         <td>@tag.Count</td>
-        <td>@tag.Popularity.ToString("#.##") %</td>
+        <td>@tag.Popularity.ToString("0.##") %</td>
       </tr>
     }
   </tbody>
