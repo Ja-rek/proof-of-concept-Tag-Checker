@@ -9,6 +9,5 @@ namespace Mediporta.StackOverflow.Infrastructure.Persistence
         {
             return type.Namespace.EndsWith("DataModel");
         }
-
     }
 }
