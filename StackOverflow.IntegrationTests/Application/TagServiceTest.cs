@@ -1,4 +1,5 @@
 using System.Linq;
+using System.Threading.Tasks;
 using Mediporta.StackOverflow.Application.Tags;
 using NUnit.Framework;
 
@@ -7,7 +8,7 @@ namespace Mediporta.StackOverflow.IntegrationTests.Application
     internal class TagServiceTest
     {
         [Test]
-        public async System.Threading.Tasks.Task GetMostPopulateTags_WhenGet1000Tags_ThenReturns1000UnicateTagsAsync()
+        public async Task GetMostPopulateTags_WhenGet1000Tags_ThenReturns1000UnicateTags()
         {
             var tags = await TagService().GetMostPopulateTags(1000);
 
@@ -15,7 +16,7 @@ namespace Mediporta.StackOverflow.IntegrationTests.Application
         }
 
         [Test]
-        public async System.Threading.Tasks.Task GetMostPopulateTags_WhenGetTags_ThenTagsContainValuesAsync()
+        public async Task GetMostPopulateTags_WhenGetTags_ThenTagsContainValues()
         {
             var tags = await TagService().GetMostPopulateTags(1);
             var tag = tags.First();
