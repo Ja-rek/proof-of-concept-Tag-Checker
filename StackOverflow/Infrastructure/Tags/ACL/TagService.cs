@@ -35,7 +35,7 @@ namespace Mediporta.StackOverflow.Infrastructure.Tags.ACL
                 }
             });
 
-            this.logger.Debug(JsonConvert.SerializeObject(allTags, Formatting.Indented));
+            this.logger.Debug("Recived tags: " + JsonConvert.SerializeObject(allTags, Formatting.Indented));
 
             return new Translator().Translate(allTags);
         }
