@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
+using NLog;
 using RestSharp;
 
 namespace Mediporta.StackOverflow.Infrastructure.Tags.ACL
@@ -7,22 +9,24 @@ namespace Mediporta.StackOverflow.Infrastructure.Tags.ACL
     public class TagAdapter
     {
         private readonly RestClient client;
+        private Logger logger = LogManager.GetCurrentClassLogger();
 
         public TagAdapter(RestClient client)
         {
             this.client = client;
         }
 
-        internal IEnumerable<TagItemResource> GetMostPopularTags(int page, int pagesize)
+        internal async Task<IEnumerable<TagItemResource>> GetMostPopularTags(PageInfo page)
         {
-            var request = new RestRequest(
-                $"tags&order=desc&sort=popular&site=stackoverflow&page={page}?pagesize={pagesize}");
+            var endpoint = $"tags?pagesize={page.Size}&page={page.Number}&order=desc&sort=popular&site=stackoverflow";
 
-            var tagResponse = this.client.Get<TagsResource>(request);
+            this.logger.Debug($"Request for tags: {endpoint}");
 
-            if (tagResponse.IsSuccessful) return tagResponse.Data.Tags;
+            var request = new RestRequest(endpoint);
 
-            return Enumerable.Empty<TagItemResource>();
+            var response = await this.client.GetAsync<TagsResource>(request);
+
+            return response.Tags;
         }
     }
 }

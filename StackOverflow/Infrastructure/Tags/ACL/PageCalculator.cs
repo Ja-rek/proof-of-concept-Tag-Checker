@@ -18,7 +18,7 @@ namespace Mediporta.StackOverflow.Infrastructure.Tags.ACL
 
             var restRows = rowsNumber - (pageNumber * maxPageSize);
 
-            for (int i = 1; i < pageNumber +1; i++) pages.Add(new PageInfo(i, maxPageSize * i));
+            for (int i = 1; i < pageNumber +1; i++) pages.Add(new PageInfo(i, maxPageSize));
 
             if (restRows > 0) pages.Add(new PageInfo(pages.Max(x => x.Number) + 1, restRows));
 
