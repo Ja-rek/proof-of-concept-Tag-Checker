@@ -1,4 +1,5 @@
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace Mediporta.StackOverflow.Application.Tags
 {
@@ -13,9 +14,9 @@ namespace Mediporta.StackOverflow.Application.Tags
             this.service = service;
         }
 
-        public DownloadResult DownloadMostPopulateTags()
+        public async Task<DownloadResult> DownloadMostPopulateTagsAsync()
         {
-            var tags = service.GetMostPopulateTags(1000);
+            var tags = await service.GetMostPopulateTags(1000);
 
             if (tags.Any())
             {
