@@ -7,17 +7,18 @@ namespace Mediporta.StackOverflow.IntegrationTests.Application
     internal class TagServiceTest
     {
         [Test]
-        public void GetMostPopulateTags_WhenGet1000Tags_ThenReturns1000UnicateTags()
+        public async System.Threading.Tasks.Task GetMostPopulateTags_WhenGet1000Tags_ThenReturns1000UnicateTagsAsync()
         {
-            var tags = TagService().GetMostPopulateTags(1000);
+            var tags = await TagService().GetMostPopulateTags(1000);
 
             Assert.AreEqual(1000, tags.GroupBy(x => x.Id).Select(x => x.First()).Count());
         }
 
         [Test]
-        public void GetMostPopulateTags_WhenGetTags_ThenTagsContainValues()
+        public async System.Threading.Tasks.Task GetMostPopulateTags_WhenGetTags_ThenTagsContainValuesAsync()
         {
-            var tag = TagService().GetMostPopulateTags(1).First();
+            var tags = await TagService().GetMostPopulateTags(1);
+            var tag = tags.First();
 
             Assert.NotZero(tag.Count);
             Assert.NotZero(tag.Popularity);
