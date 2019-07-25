@@ -4,9 +4,9 @@ using FluentNHibernate.Cfg.Db;
 using NHibernate.Tool.hbm2ddl;
 using System;
 using FluentNHibernate.Automapping;
-using Mediporta.StackOverflow.Infrastructure.Persistence.DataModel;
+using Mediporta.TagChecker.StackOverflow.Infrastructure.Persistence.DataModel;
 
-namespace Mediporta.StackOverflow.Infrastructure.Persistence
+namespace Mediporta.TagChecker.StackOverflow.Infrastructure.Persistence
 {
     public static class SessionFactory
     {

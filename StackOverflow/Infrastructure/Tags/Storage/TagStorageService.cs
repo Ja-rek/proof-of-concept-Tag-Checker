@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using Mediporta.StackOverflow.Application.Tags;
-using Mediporta.StackOverflow.Infrastructure.Persistence.DataModel;
+using Mediporta.TagChecker.StackOverflow.Application.Tags;
+using Mediporta.TagChecker.StackOverflow.Infrastructure.Persistence.DataModel;
 using NHibernate;
 
-namespace Mediporta.StackOverflow.Infrastructure.Tags.Storage
+namespace Mediporta.TagChecker.StackOverflow.Infrastructure.Tags.Storage
 {
     public class TagStorageService : ITagStorageService
     {

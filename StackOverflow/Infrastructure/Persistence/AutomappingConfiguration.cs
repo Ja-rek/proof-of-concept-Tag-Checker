@@ -1,7 +1,7 @@
 using FluentNHibernate;
 using FluentNHibernate.Automapping;
 
-namespace Mediporta.StackOverflow.Infrastructure.Persistence
+namespace Mediporta.TagChecker.StackOverflow.Infrastructure.Persistence
 {
     public class AutomappingConfiguration : DefaultAutomappingConfiguration 
     {

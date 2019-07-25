@@ -1,12 +1,12 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Mediporta.StackOverflow.Infrastructure.Persistence.DataModel;
-using Mediporta.StackOverflow.Application.Tags;
+using Mediporta.TagChecker.StackOverflow.Infrastructure.Persistence.DataModel;
+using Mediporta.TagChecker.StackOverflow.Application.Tags;
 using NLog;
 using Newtonsoft.Json;
 using System.Linq;
 
-namespace Mediporta.StackOverflow.Infrastructure.Tags.ACL
+namespace Mediporta.TagChecker.StackOverflow.Infrastructure.Tags.ACL
 {
     public class TagService : ITagService
     {

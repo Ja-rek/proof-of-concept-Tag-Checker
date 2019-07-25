@@ -1,4 +1,4 @@
-namespace Mediporta.StackOverflow.Infrastructure.Tags.ACL
+namespace Mediporta.TagChecker.StackOverflow.Infrastructure.Tags.ACL
 {
     public class PageInfo
     {

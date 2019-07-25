@@ -2,7 +2,7 @@
 using NLog.Config;
 using NLog.Targets;
 
-namespace Mediporta.StackOverflow.Infrastructure
+namespace Mediporta.TagChecker.StackOverflow.Infrastructure
 {
     public static class LogConfig
     {

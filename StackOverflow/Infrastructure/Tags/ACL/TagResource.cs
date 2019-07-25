@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using RestSharp.Deserializers;
 
-namespace Mediporta.StackOverflow.Infrastructure.Tags.ACL
+namespace Mediporta.TagChecker.StackOverflow.Infrastructure.Tags.ACL
 {
     public class TagItemResource
     {

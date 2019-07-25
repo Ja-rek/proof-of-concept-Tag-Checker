@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Mediporta.StackOverflow.Infrastructure.Persistence.DataModel;
+using Mediporta.TagChecker.StackOverflow.Infrastructure.Persistence.DataModel;
 
-namespace Mediporta.StackOverflow.Application.Tags
+namespace Mediporta.TagChecker.StackOverflow.Application.Tags
 {
     public interface ITagService
     {

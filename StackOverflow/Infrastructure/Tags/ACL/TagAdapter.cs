@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using NLog;
 using RestSharp;
 
-namespace Mediporta.StackOverflow.Infrastructure.Tags.ACL
+namespace Mediporta.TagChecker.StackOverflow.Infrastructure.Tags.ACL
 {
     public class TagAdapter
     {

@@ -1,7 +1,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Mediporta.StackOverflow.Application.Tags
+namespace Mediporta.TagChecker.StackOverflow.Application.Tags
 {
     public class TagApplicationService
     {

@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Hosting;
 using Autofac.Extensions.DependencyInjection;
 
-namespace Mediporta.StackOverflow.Presentation
+namespace Mediporta.TagChecker.StackOverflow.Presentation
 {
     public class Program
     {

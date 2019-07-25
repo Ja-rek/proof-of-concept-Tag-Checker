@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using Mediporta.StackOverflow.Infrastructure.Persistence.DataModel;
+using Mediporta.TagChecker.StackOverflow.Infrastructure.Persistence.DataModel;
 using NHibernate;
 
-namespace Mediporta.StackOverflow.Application.Tags
+namespace Mediporta.TagChecker.StackOverflow.Application.Tags
 {
     public class TagQueryService
     {

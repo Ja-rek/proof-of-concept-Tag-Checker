@@ -1,8 +1,8 @@
 using NUnit.Framework;
-using Mediporta.StackOverflow.Infrastructure;
+using Mediporta.TagChecker.StackOverflow.Infrastructure;
 using NLog;
 
-namespace Mediporta.StackOverflow.IntegrationTests
+namespace Mediporta.TagChecker.StackOverflow.IntegrationTests
 {
     [SetUpFixture]
     internal class Setup

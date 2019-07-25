@@ -1,4 +1,4 @@
-namespace Mediporta.StackOverflow.Infrastructure.Persistence.DataModel
+namespace Mediporta.TagChecker.StackOverflow.Infrastructure.Persistence.DataModel
 {
     public class TagData
     {

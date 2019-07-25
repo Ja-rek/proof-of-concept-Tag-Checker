@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using AutoMapper;
-using Mediporta.StackOverflow.Infrastructure.Persistence.DataModel;
+using Mediporta.TagChecker.StackOverflow.Infrastructure.Persistence.DataModel;
 
-namespace Mediporta.StackOverflow.Infrastructure.Tags.ACL
+namespace Mediporta.TagChecker.StackOverflow.Infrastructure.Tags.ACL
 {
     internal class Translator
     {

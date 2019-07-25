@@ -1,5 +1,5 @@
 ﻿using Autofac;
-using Mediporta.StackOverflow.Infrastructure.ContainerIOC;
+using Mediporta.TagChecker.StackOverflow.Infrastructure.ContainerIOC;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Mediporta.StackOverflow.Presentation
+namespace Mediporta.TagChecker.StackOverflow.Presentation
 {
     public class Startup
     {

@@ -1,10 +1,10 @@
 ﻿using System.Diagnostics;
-using Mediporta.StackOverflow.Application.Tags;
+using Mediporta.TagChecker.StackOverflow.Application.Tags;
 using Microsoft.AspNetCore.Mvc;
-using Mediporta.StackOverflow.Presentation.Models;
+using Mediporta.TagChecker.StackOverflow.Presentation.Models;
 using System.Threading.Tasks;
 
-namespace Mediporta.StackOverflow.Presentation.Controllers
+namespace Mediporta.TagChecker.StackOverflow.Presentation.Controllers
 {
     public class TagsController : Controller
     {

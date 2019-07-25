@@ -1,7 +1,7 @@
 using Autofac;
-using Mediporta.StackOverflow.Infrastructure.ContainerIOC;
+using Mediporta.TagChecker.StackOverflow.Infrastructure.ContainerIOC;
 
-namespace Mediporta.StackOverflow.IntegrationTests
+namespace Mediporta.TagChecker.StackOverflow.IntegrationTests
 {
     internal class ServiceLocator
     {

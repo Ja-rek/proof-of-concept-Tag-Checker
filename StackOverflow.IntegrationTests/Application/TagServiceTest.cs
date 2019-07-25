@@ -1,9 +1,9 @@
 using System.Linq;
 using System.Threading.Tasks;
-using Mediporta.StackOverflow.Application.Tags;
+using Mediporta.TagChecker.StackOverflow.Application.Tags;
 using NUnit.Framework;
 
-namespace Mediporta.StackOverflow.IntegrationTests.Application
+namespace Mediporta.TagChecker.StackOverflow.IntegrationTests.Application
 {
     internal class TagServiceTest
     {

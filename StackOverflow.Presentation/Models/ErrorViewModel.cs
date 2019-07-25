@@ -1,6 +1,6 @@
 using System;
 
-namespace Mediporta.StackOverflow.Presentation.Models
+namespace Mediporta.TagChecker.StackOverflow.Presentation.Models
 {
     public class ErrorViewModel
     {

@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using Mediporta.StackOverflow.Infrastructure.Tags.ACL;
+using Mediporta.TagChecker.StackOverflow.Infrastructure.Tags.ACL;
 using NUnit.Framework;
 
-namespace Tests.Infrastructure
+namespace Mediporta.TagChecker.StackOverflow.UnitTests.Infrastructure
 {
     internal class PagesCalculatorTest
     {

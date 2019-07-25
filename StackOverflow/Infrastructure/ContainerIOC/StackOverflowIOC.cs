@@ -1,12 +1,12 @@
 using Autofac;
-using Mediporta.StackOverflow.Application.Tags;
-using Mediporta.StackOverflow.Infrastructure.Persistence;
-using Mediporta.StackOverflow.Infrastructure.Tags.ACL;
-using Mediporta.StackOverflow.Infrastructure.Tags.Storage;
+using Mediporta.TagChecker.StackOverflow.Application.Tags;
+using Mediporta.TagChecker.StackOverflow.Infrastructure.Persistence;
+using Mediporta.TagChecker.StackOverflow.Infrastructure.Tags.ACL;
+using Mediporta.TagChecker.StackOverflow.Infrastructure.Tags.Storage;
 using NHibernate;
 using RestSharp;
 
-namespace Mediporta.StackOverflow.Infrastructure.ContainerIOC
+namespace Mediporta.TagChecker.StackOverflow.Infrastructure.ContainerIOC
 {
     public class StackOverflowIOC : Autofac.Module
     {
