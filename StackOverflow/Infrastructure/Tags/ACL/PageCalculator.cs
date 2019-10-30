@@ -9,18 +9,19 @@ namespace Mediporta.TagChecker.StackOverflow.Infrastructure.Tags.ACL
         public static IEnumerable<PageInfo> Calculate(int rowsNumber)
         {
             const int maxPageSize = 100;
-
             var pages = new Collection<PageInfo>();
 
-            if (rowsNumber < maxPageSize) return new PageInfo[] { new PageInfo(1, rowsNumber) };
+            if (rowsNumber < maxPageSize) 
+                return new PageInfo[] { new PageInfo(1, rowsNumber) };
 
             var pageNumber = (int)rowsNumber / maxPageSize;
-
             var restRows = rowsNumber - (pageNumber * maxPageSize);
 
-            for (int i = 1; i < pageNumber +1; i++) pages.Add(new PageInfo(i, maxPageSize));
+            for (int i = 1; i < pageNumber +1; i++) 
+                pages.Add(new PageInfo(i, maxPageSize));
 
-            if (restRows > 0) pages.Add(new PageInfo(pages.Max(x => x.Number) + 1, restRows));
+            if (restRows > 0) 
+                pages.Add(new PageInfo(pages.Max(x => x.Number) + 1, restRows));
 
             return pages;
         }

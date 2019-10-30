@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Linq;
-using AutoMapper;
 using Mediporta.TagChecker.StackOverflow.Infrastructure.Persistence.DataModel;
 
 namespace Mediporta.TagChecker.StackOverflow.Infrastructure.Tags.ACL

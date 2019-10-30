@@ -21,21 +21,16 @@ namespace Mediporta.TagChecker.StackOverflow.Infrastructure.Tags.ACL
         public async Task<IEnumerable<TagData>> GetMostPopulateTags(int tagsNumber)
         {
             var pagesInfo = PagesCalculator.Calculate(tagsNumber);
-
-            var allTags = new List<TagItemResource>();
-
             var tasks = pagesInfo.Select(pageInfo => this.adapter.GetMostPopularTags(pageInfo));
 
-            var batchsTag = await Task.WhenAll(tasks);
+            var batchsOfTags = await Task.WhenAll(tasks);
 
-            foreach (var batchTag in batchsTag) 
-            {
-                if (batchTag != null) allTags.AddRange(batchTag);
-            }
+            var tags = batchsOfTags.Where(t => t != null)
+                .SelectMany(t => t);
 
-            this.logger.Debug("Recived tags: " + JsonConvert.SerializeObject(allTags, Formatting.Indented));
+            this.logger.Debug("Recived tags: " + JsonConvert.SerializeObject(tags, Formatting.Indented));
 
-            return new Translator().Translate(allTags);
+            return new Translator().Translate(tags);
         }
     }
 }

@@ -23,7 +23,6 @@ namespace Mediporta.TagChecker.StackOverflow.Infrastructure.Tags.ACL
             this.logger.Debug($"Request for tags: {endpoint}");
 
             var request = new RestRequest(endpoint);
-
             var response = await this.client.GetAsync<TagsResource>(request);
 
             return response.Tags;
